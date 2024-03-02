@@ -32,7 +32,9 @@ const webpackConfig = merge(baseWebpackConfig, {
     new webpack.DefinePlugin({
       'process.env': env
     }),
-    new UglifyJsPlugin({
+    // 为简化webpack的打包流程，webpack源码调试前注释掉插件
+    // UglifyJsPlugin、ExtractTextPlugin、OptimizeCSSPlugin和HtmlWebpackPlugin
+   /* new UglifyJsPlugin({
       uglifyOptions: {
         compress: {
           warnings: false
@@ -73,7 +75,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       },
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency'
-    }),
+    }),*/
     // keep module.id stable when vendor modules does not change
     new webpack.HashedModuleIdsPlugin(),
     // enable scope hoisting
