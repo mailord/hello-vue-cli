@@ -1,6 +1,6 @@
 #hello-vue-cli
 ## 介绍
-hello-vue-cli是基于vue-cli 2创建的项目脚手架，用于webpack 3源码调试。基于vue-cli 2创建项目脚手架hello-vue-cli的详细步骤参考文档“从源码看webpack3.0打包流程.md”的第1.3节。
+hello-vue-cli是基于vue-cli 2创建的项目脚手架，用于webpack 3源码调试。基于vue-cli 2创建项目脚手架hello-vue-cli的详细步骤参考文档“[从源码看webpack3打包流程.md](https://www.cnblogs.com/jann8/p/18052360)”的第1.3节。
 
 ## 项目构建
 你需要安装Node.js。笔者安装的版本是v16.20.2。然后在终端运行以下命令进行项目构建。
@@ -18,9 +18,9 @@ npm run build
 npm run build --report
 ```
 
-##webpack 3源码调试
+## webpack3源码调试
 
-webpack 3源码调试参考文档“从源码看webpack3.0打包流程.md”的第3节。在webpack源码中打好断点，然后运行`npm run build`即可开始调试。
+webpack 3源码调试参考文档“[从源码看webpack3打包流程.md](https://www.cnblogs.com/jann8/p/18052360)”的第3节。在webpack源码中打好断点，然后运行`npm run build`即可开始调试。
 
 在调试过程中，对hello-vue-cli项目进行了以下修改：
 
